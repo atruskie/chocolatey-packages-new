@@ -1,13 +1,8 @@
 # Chocolatey Packages
 
-~~~
-<!-- EDIT ME-->
+[![](https://ci.appveyor.com/api/projects/status/github/atruskie/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/atruskie/chocolatey-packages)
+[Update status](https://gist.github.com/atruskie/228fedee6854c32a34b10e918567a346)
 
-[![](https://ci.appveyor.com/api/projects/status/github/YOUR_GITHUB_USERNAME_HERE/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/YOUR_GITHUB_USERNAME_HERE/chocolatey-packages)
-[Update status](https://gist.github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GIST_ID)
-
-<!-- REMOVE THE squiggles "~" surrounding this (this should not be a code block) -->
-~~~
 
 ## Chocolatey Packages Template
 
@@ -29,13 +24,6 @@ For setting up your own automatic package repository, please see [Automatic Pack
 ### Requirements
 
 * Chocolatey (choco.exe)
-
-#### Ketarin / ChocolateyPackageUpdater
-
-* PowerShell v2+
-* [Ketarin](https://chocolatey.org/packages/ketarin)
-* [Chocolatey Package Updater](https://chocolatey.org/packages/chocolateypackageupdater)
-* A Windows box somewhere - to run the updater on - appveyor can't work until the import of the settings can be automated
 
 #### AU
 
