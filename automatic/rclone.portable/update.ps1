@@ -5,10 +5,10 @@ $github_releases = 'https://api.github.com/repos/ncw/rclone/releases/latest'
 function global:au_SearchReplace {
    @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
-            "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.URL64)'"
-            "(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
-            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+            "(?i)(^\s*Url\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
+            "(?i)(^\s*Url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.URL64)'"
+            "(?i)(^\s*Checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*Checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
         ".\legal\VERIFICATION.txt" = @{
             "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
