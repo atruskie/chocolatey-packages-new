@@ -1,6 +1,6 @@
 # Chocolatey Packages
 
-[![](https://ci.appveyor.com/api/projects/status/github/atruskie/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/atruskie/chocolatey-packages)
+[![](https://ci.appveyor.com/api/projects/status/github/atruskie/chocolatey-packages-new?svg=true)](https://ci.appveyor.com/project/atruskie/chocolatey-packages-new)
 [Update status](https://gist.github.com/atruskie/228fedee6854c32a34b10e918567a346)
 
 
