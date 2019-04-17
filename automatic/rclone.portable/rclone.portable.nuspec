@@ -8,7 +8,7 @@
     <title>rclone</title>
     <authors>Nick Craig-Wood</authors>
     <projectUrl>https://rclone.org/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/atruskie/chocolatey-packages/7b04ecd143e55ccd434c35f08c1ab35561356d35/icons/rclone-120x120.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/atruskie/chocolatey-packages-new/038bd64cdc9b8d57bc10203e01f3924465466c41/icons/rclone-120x120.png</iconUrl>
 	  <copyright>Copyright (C) 2012 by Nick Craig-Wood</copyright>
     <licenseUrl>https://github.com/ncw/rclone/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
