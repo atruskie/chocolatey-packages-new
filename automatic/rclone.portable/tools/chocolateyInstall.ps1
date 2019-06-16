@@ -4,12 +4,12 @@ $toolsDir      = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
     PackageName  = 'rclone.portable'
-    Url = 'https://github.com/ncw/rclone/releases/download/v1.47.0/rclone-v1.47.0-windows-386.zip'
+    Url = 'https://github.com/ncw/rclone/releases/download/v1.48.0/rclone-v1.48.0-windows-386.zip'
     UnzipLocation = $toolsDir
-    Url64bit = 'https://github.com/ncw/rclone/releases/download/v1.47.0/rclone-v1.47.0-windows-amd64.zip'
-    Checksum = '0cf904ce984fcd353cb137fae51d6c8ed14ff70e2c4c597717619cb213dab042'
+    Url64bit = 'https://github.com/ncw/rclone/releases/download/v1.48.0/rclone-v1.48.0-windows-amd64.zip'
+    Checksum = '53b6c790687620aec8c28318c78d8471bcab2346d07bf30dc09e937000419547'
     ChecksumType = "sha256"
-    Checksum64 = '70a5325eba25fd10598ed69d0bd980e2e5c5538e1eb589c96aa772dee4393bb0'
+    Checksum64 = 'c75f3a339eecbdca25578a8a38dc3412d894bfad6e69ad1bd5be3c1ab98ae542'
     Checksum64Type = "sha256"
 }
 
