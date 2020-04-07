@@ -25,7 +25,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-    $releases = Invoke-RestMethod $github_releases
+    $releases = Invoke-RestMethod $github_releases -Headers @{Authorization="token ${Env:github_api_key}"}
     
     $386 = $releases[0].assets | Where-Object { $_.name -ilike "*windows-386*" }
     $amd64 = $releases[0].assets | Where-Object { $_.name -ilike "*windows-amd64*" }
