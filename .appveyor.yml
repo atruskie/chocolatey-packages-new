@@ -89,9 +89,10 @@ build_script:
 
     if ($Env:APPVEYOR_FORCED_BUILD    -ieq 'true') {
       $global:au_Force = $true
+      $env:au_Force = 'true'
     }
     Write-output "global:au_Force is ${global:au_Force}"
-    ./update_all.ps1
+    ./update_all.ps1 -ForcedPackages $forced
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
