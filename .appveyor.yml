@@ -87,7 +87,11 @@ build_script:
         }
     }
 
-    ./update_all.ps1 -ForcedPackages $forced
+    if ($forced) {
+      $global:au_Force = $true
+    }
+    Write-output "global:au_Force is ${global:au_Force}"
+    ./update_all.ps1
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
