@@ -13,7 +13,7 @@
     <licenseUrl>https://github.com/ncw/rclone/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/ncw/rclone</projectSourceUrl>
-    <docsUrl>http://rclone.org/docs/</docsUrl>
+    <docsUrl>https://rclone.org/docs/</docsUrl>
     <bugTrackerUrl>https://github.com/ncw/rclone/issues</bugTrackerUrl>
     <tags>rclone sync cloud</tags>
     <summary>Commandline tool for file sync</summary>
