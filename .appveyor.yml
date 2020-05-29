@@ -92,7 +92,7 @@ build_script:
       $env:au_Force = 'true'
     }
     Write-output "global:au_Force is ${global:au_Force}"
-    ./update_all.ps1 -ForcedPackages $forced
+    ./update_all.ps1 -ForcedPackages $forced -ForceAll $global:au_Force
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
