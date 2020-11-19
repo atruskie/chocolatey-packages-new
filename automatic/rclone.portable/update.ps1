@@ -5,10 +5,8 @@ $github_releases = 'https://api.github.com/repos/ncw/rclone/releases/latest'
 function global:au_SearchReplace {
    @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*Url\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
-            "(?i)(^\s*Url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.URL64)'"
-            "(?i)(^\s*Checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
-            "(?i)(^\s*Checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+            "(?i)(^\s*FileFullPath\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName32)'"
+            "(?i)(^\s*FileFullPath64\s*=\s*)(.*)" = "`$1Join-Path `$toolsDir '$($Latest.FileName64)'"
         }
         ".\legal\VERIFICATION.txt" = @{
             "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
@@ -22,6 +20,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
+    Get-RemoteFiles -Purge -NoSuffix
 }
 
 function global:au_GetLatest {
@@ -34,20 +33,11 @@ function global:au_GetLatest {
 
     $version  = $releases[0].tag_name -replace 'v',''
 
-    $checksumsUrl = ($releases[0].assets | Where-Object { $_.name -ilike "sha256sums" }).browser_download_url
-    $checksums = (Invoke-WebRequest $checksumsUrl).RawContent
-    $checksum32 = if ($checksums -match "(.*)  rclone.*windows-386.*") {   $Matches[1] }
-    $checksum64 = if ($checksums -match "(.*)  rclone.*windows-amd64.*") {   $Matches[1] }
-
     @{
         Version      = $version
         URL32        = $url32
         URL64        = $url64
         ReleaseNotes = $releases[0].Body
-        Checksum32 = $checksum32
-        Checksum32Type = 'sha256'
-        Checksum64 = $checksum64
-        Checksum64Type = 'sha256'
 
     }
 }
