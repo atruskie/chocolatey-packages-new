@@ -13,7 +13,7 @@ branches:
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
-  au_version:
+  au_version: master
   au_push: true
   # Force test: use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
@@ -90,6 +90,10 @@ build_script:
     if ($Env:APPVEYOR_FORCED_BUILD    -ieq 'true') {
       $global:au_Force = $true
       $env:au_Force = 'true'
+    }
+    else {
+      $global:au_Force = $false
+      $env:au_Force = 'false'
     }
     Write-output "global:au_Force is ${global:au_Force}"
     ./update_all.ps1 -ForcedPackages $forced -ForceAll $global:au_Force
