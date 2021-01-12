@@ -23,7 +23,5 @@
       <dependency id="rclone.portable" version="1.53.3.20201120" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="**" exclude="update.ps1" />
-  </files>
+  <files />
 </package>
