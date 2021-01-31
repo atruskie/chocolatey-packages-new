@@ -9,7 +9,7 @@ $packageArgs = @{
 }
 
 #Remove old versions of rclone in the tools directory
-Get-ChildItem -Directory -Path $toolsDir | Remove-Item -Recurse -Ea 0
+Get-ChildItem -Path $toolsDir | Where-Object { $_.PSIsContainer } | Remove-Item -Recurse -Ea 0
 
 Get-ChocolateyUnzip @packageArgs
 
