@@ -4,8 +4,8 @@ $toolsDir              = Split-Path $MyInvocation.MyCommand.Definition
 $packageArgs = @{
     PackageName    = $env:ChocolateyPackageName
     Destination    = $toolsDir
-    FileFullPath   = Join-Path $toolsDir 'rclone-v1.65.2-windows-386.zip'
-    FileFullPath64 = Join-Path $toolsDir 'rclone-v1.65.2-windows-amd64.zip'
+    FileFullPath   = Join-Path $toolsDir 'rclone-v1.66.0-windows-386.zip'
+    FileFullPath64 = Join-Path $toolsDir 'rclone-v1.66.0-windows-amd64.zip'
 }
 
 #Remove old versions of rclone in the tools directory
