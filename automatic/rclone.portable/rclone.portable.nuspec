@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>rclone.portable</id>
-    <version>1.72.0</version>
+    <version>1.72.1</version>
     <packageSourceUrl>https://github.com/atruskie/chocolatey-packages-new</packageSourceUrl>
     <owners>atruskie,kkzinger</owners>
     <title>rclone</title>
