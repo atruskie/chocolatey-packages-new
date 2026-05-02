@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/rclone/rclone/releases/download/v1.73.5/rclone-v1.73.5-windows-386.zip
-   x64: https://github.com/rclone/rclone/releases/download/v1.73.5/rclone-v1.73.5-windows-amd64.zip
+   x32: https://github.com/rclone/rclone/releases/download/v1.74.0/rclone-v1.74.0-windows-386.zip
+   x64: https://github.com/rclone/rclone/releases/download/v1.74.0/rclone-v1.74.0-windows-amd64.zip
 
    to download the zip.
 
@@ -16,13 +16,13 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 58AB1AA37253F1CF33D9C33970C2DD693A744E0CA7111B4BFAD0396F79D400F3
-   checksum64: 201567C54304935112B06DFAC4AD754786287FB5ACFAD8889FECA8D1CDEBA92B
+   checksum32: F20E5FFD9EEC7C9A972D62A61D786325C09A08B8A21FBC1E2B1CAD98595071F1
+   checksum64: CCEBEAE41401E60E6906A4C98BD0F0BD94038B7E6CC3DD01A487013C1A7E4951
 
 Using AU:
 
-  x32-ver: Get-RemoteChecksum https://github.com/rclone/rclone/releases/download/v1.73.5/rclone-v1.73.5-windows-386.zip
-  x64-ver: Get-RemoteChecksum https://github.com/rclone/rclone/releases/download/v1.73.5/rclone-v1.73.5-windows-amd64.zip
+  x32-ver: Get-RemoteChecksum https://github.com/rclone/rclone/releases/download/v1.74.0/rclone-v1.74.0-windows-386.zip
+  x64-ver: Get-RemoteChecksum https://github.com/rclone/rclone/releases/download/v1.74.0/rclone-v1.74.0-windows-amd64.zip
 
 File 'LICENSE.txt' is obtained from:
    https://github.com/ncw/rclone/blob/master/COPYING
